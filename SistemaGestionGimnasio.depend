@@ -125,3 +125,27 @@
 	<string>
 	"registroAsistencia.h"
 
+1728841424 source:c:\sgg\sistemagestiongimnasio\gestionarchivopagos.cpp
+	"GestionArchivoPagos.h"
+	"registroPago.h"
+
+1728841373 c:\sgg\sistemagestiongimnasio\gestionarchivopagos.h
+	<string>
+	"registroPago.h"
+
+1728841124 source:c:\sgg\sistemagestiongimnasio\gestionarchivoreclamos.cpp
+	"GestionArchivoReclamos.h"
+	"reclamo.h"
+
+1728840466 c:\sgg\sistemagestiongimnasio\gestionarchivoreclamos.h
+	<string>
+	"Reclamo.h"
+
+1728841185 source:c:\sgg\sistemagestiongimnasio\gestionarchivorutinas.cpp
+	"GestionArchivoRutinas.h"
+	"rutina.h"
+
+1728840498 c:\sgg\sistemagestiongimnasio\gestionarchivorutinas.h
+	<string>
+	"Rutina.h"
+

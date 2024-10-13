@@ -32,21 +32,37 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="GestionArchivoAsistencias.cpp" />
+		<Unit filename="GestionArchivoAsistencias.cpp">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoAsistencias.h" />
-		<Unit filename="GestionArchivoDetalleRutinas.cpp" />
+		<Unit filename="GestionArchivoDetalleRutinas.cpp">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoDetalleRutinas.h" />
-		<Unit filename="GestionArchivoEjercicios.cpp" />
+		<Unit filename="GestionArchivoEjercicios.cpp">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoEjercicios.h" />
-		<Unit filename="GestionArchivoEntrenadores.cpp" />
+		<Unit filename="GestionArchivoEntrenadores.cpp">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoEntrenadores.h" />
-		<Unit filename="GestionArchivoPagos.cpp" />
+		<Unit filename="GestionArchivoPagos.cpp">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoPagos.h" />
-		<Unit filename="GestionArchivoReclamos.cpp" />
+		<Unit filename="GestionArchivoReclamos.cpp">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoReclamos.h" />
-		<Unit filename="GestionArchivoRutinas.cpp" />
+		<Unit filename="GestionArchivoRutinas.cpp">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoRutinas.h" />
-		<Unit filename="GestionArchivoSocios.cpp" />
+		<Unit filename="GestionArchivoSocios.cpp">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoSocios.h" />
 		<Unit filename="actividad.cpp">
 			<Option virtualFolder="modelos/" />
