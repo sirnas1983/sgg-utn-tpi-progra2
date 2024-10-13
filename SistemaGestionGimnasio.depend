@@ -1,0 +1,127 @@
+# depslib dependency file v1.0
+1728831103 source:c:\sgg\sistemagestiongimnasio\actividad.cpp
+	"actividad.h"
+	<cstring>
+
+1728831681 c:\sgg\sistemagestiongimnasio\actividad.h
+
+1728831628 source:c:\sgg\sistemagestiongimnasio\empleado.cpp
+	"empleado.h"
+
+1728831743 c:\sgg\sistemagestiongimnasio\empleado.h
+	"usuario.h"
+	"turno.h"
+	"tipoContrato.h"
+
+1728829600 c:\sgg\sistemagestiongimnasio\usuario.h
+	"rol.h"
+	"fecha.h"
+
+1728830231 c:\sgg\sistemagestiongimnasio\rol.h
+
+1728832326 c:\sgg\sistemagestiongimnasio\fecha.h
+	<string>
+
+1728830228 c:\sgg\sistemagestiongimnasio\turno.h
+
+1728830231 c:\sgg\sistemagestiongimnasio\tipocontrato.h
+
+1728830736 source:c:\sgg\sistemagestiongimnasio\entrenador.cpp
+	"entrenador.h"
+
+1728831772 c:\sgg\sistemagestiongimnasio\entrenador.h
+	"empleado.h"
+
+1728831495 source:c:\sgg\sistemagestiongimnasio\rutina.cpp
+	"rutina.h"
+
+1728831394 c:\sgg\sistemagestiongimnasio\rutina.h
+	<cstring>
+
+1728830249 source:c:\sgg\sistemagestiongimnasio\socio.cpp
+	"socio.h"
+	<cstring>
+
+1728829046 c:\sgg\sistemagestiongimnasio\socio.h
+	"membresia.h"
+	"usuario.h"
+
+1728830231 c:\sgg\sistemagestiongimnasio\membresia.h
+
+1728832237 source:c:\sgg\sistemagestiongimnasio\usuario.cpp
+	"usuario.h"
+	<cstring>
+
+1728832175 source:c:\sgg\sistemagestiongimnasio\fecha.cpp
+	"fecha.h"
+	<iostream>
+	<string>
+
+1728832418 source:c:\sgg\sistemagestiongimnasio\main.cpp
+
+1728832769 source:c:\sgg\sistemagestiongimnasio\detallerutina.cpp
+	"detalleRutina.h"
+
+1728832661 c:\sgg\sistemagestiongimnasio\detallerutina.h
+
+1728833525 source:c:\sgg\sistemagestiongimnasio\ejercicio.cpp
+	"ejercicio.h"
+	<cstring>
+
+1728833477 c:\sgg\sistemagestiongimnasio\ejercicio.h
+
+1728834822 source:c:\sgg\sistemagestiongimnasio\registroasistencia.cpp
+	"registroAsistencia.h"
+
+1728834844 c:\sgg\sistemagestiongimnasio\registroasistencia.h
+	"fecha.h"
+
+1728834249 source:c:\sgg\sistemagestiongimnasio\reclamo.cpp
+	"reclamo.h"
+	<cstring>
+
+1728833743 c:\sgg\sistemagestiongimnasio\reclamo.h
+	"fecha.h"
+
+1728834710 source:c:\sgg\sistemagestiongimnasio\registropago.cpp
+	"registroPago.h"
+	<cstring>
+
+1728834781 c:\sgg\sistemagestiongimnasio\registropago.h
+	"tipoRegistro.h"
+	"fecha.h"
+
+1728834538 c:\sgg\sistemagestiongimnasio\tiporegistro.h
+
+1728841229 source:c:\sgg\sistemagestiongimnasio\gestionarchivodetallerutinas.cpp
+	"GestionArchivoDetalleRutinas.h"
+	"detalleRutina.h"
+
+1728840526 c:\sgg\sistemagestiongimnasio\gestionarchivodetallerutinas.h
+	<string>
+	"DetalleRutina.h"
+
+1728841289 source:c:\sgg\sistemagestiongimnasio\gestionarchivoejercicios.cpp
+	"GestionArchivoEjercicios.h"
+	"ejercicio.h"
+
+1728840555 c:\sgg\sistemagestiongimnasio\gestionarchivoejercicios.h
+	<string>
+	"Ejercicio.h"
+
+1728840929 source:c:\sgg\sistemagestiongimnasio\gestionarchivoentrenadores.cpp
+	"GestionArchivoEntrenadores.h"
+	"entrenador.h"
+
+1728840381 c:\sgg\sistemagestiongimnasio\gestionarchivoentrenadores.h
+	<string>
+	"Entrenador.h"
+
+1728841404 source:c:\sgg\sistemagestiongimnasio\gestionarchivoasistencias.cpp
+	"GestionArchivoAsistencias.h"
+	"registroAsistencia.h"
+
+1728841340 c:\sgg\sistemagestiongimnasio\gestionarchivoasistencias.h
+	<string>
+	"registroAsistencia.h"
+

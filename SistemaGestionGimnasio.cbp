@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SistemaGestionGimnasio" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="modelos/;servicios/;gestorArchivos/;menus/" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SistemaGestionGimnasio" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SistemaGestionGimnasio" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="GestionArchivoAsistencias.cpp" />
+		<Unit filename="GestionArchivoAsistencias.h" />
+		<Unit filename="GestionArchivoDetalleRutinas.cpp" />
+		<Unit filename="GestionArchivoDetalleRutinas.h" />
+		<Unit filename="GestionArchivoEjercicios.cpp" />
+		<Unit filename="GestionArchivoEjercicios.h" />
+		<Unit filename="GestionArchivoEntrenadores.cpp" />
+		<Unit filename="GestionArchivoEntrenadores.h" />
+		<Unit filename="GestionArchivoPagos.cpp" />
+		<Unit filename="GestionArchivoPagos.h" />
+		<Unit filename="GestionArchivoReclamos.cpp" />
+		<Unit filename="GestionArchivoReclamos.h" />
+		<Unit filename="GestionArchivoRutinas.cpp" />
+		<Unit filename="GestionArchivoRutinas.h" />
+		<Unit filename="GestionArchivoSocios.cpp" />
+		<Unit filename="GestionArchivoSocios.h" />
+		<Unit filename="actividad.cpp">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="actividad.h" />
+		<Unit filename="detalleRutina.cpp">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="detalleRutina.h" />
+		<Unit filename="ejercicio.cpp">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="ejercicio.h" />
+		<Unit filename="empleado.cpp">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="empleado.h" />
+		<Unit filename="entrenador.cpp">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="entrenador.h" />
+		<Unit filename="fecha.cpp">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="fecha.h" />
+		<Unit filename="main.cpp">
+			<Option virtualFolder="menus/" />
+		</Unit>
+		<Unit filename="membresia.h" />
+		<Unit filename="reclamo.cpp">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="reclamo.h" />
+		<Unit filename="registroAsistencia.cpp">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="registroAsistencia.h" />
+		<Unit filename="registroPago.cpp">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="registroPago.h" />
+		<Unit filename="rol.h" />
+		<Unit filename="rutina.cpp">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="rutina.h" />
+		<Unit filename="servicioEntrenador.h" />
+		<Unit filename="servicioGerente.h" />
+		<Unit filename="servicioSocio.h" />
+		<Unit filename="socio.cpp">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="socio.h" />
+		<Unit filename="tipoContrato.h" />
+		<Unit filename="tipoRegistro.h" />
+		<Unit filename="turno.h" />
+		<Unit filename="usuario.cpp">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="usuario.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
