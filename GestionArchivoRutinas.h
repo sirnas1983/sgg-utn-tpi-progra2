@@ -2,7 +2,8 @@
 #include <string>
 #include "Rutina.h"
 
-class GestionArchivoRutinas {
+class GestionArchivoRutinas
+{
 private:
     std::string _nombreArchivo;
 

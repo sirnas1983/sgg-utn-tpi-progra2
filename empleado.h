@@ -4,7 +4,8 @@
 #include "turno.h"
 #include "tipoContrato.h"
 
-class Empleado : public Usuario {
+class Empleado : public Usuario
+{
 
 private:
     int _legajo;

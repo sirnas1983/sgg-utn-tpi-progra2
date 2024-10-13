@@ -1,17 +1,18 @@
 #ifndef SERVICIOENTRENADOR_H
 #define SERVICIOENTRENADOR_H
 
-#include "gestionArchivoSocio.h"
-#include "gestionArchivoEntrenador.h"
-#include "gestionArchivoAsistencia.h"
-#include "gestionArchivoPago.h"
-#include "gestionArchivoReclamo.h"
-#include "gestionArtchivoEjercicio.h"
-#include "gestionArchivoDetalleRutina.h"
-#include "gestionArchivoRutina.h"
+#include "GestionArchivoSocios.h"
+#include "GestionArchivoEntrenadores.h"
+#include "GestionArchivoAsistencias.h"
+#include "GestionArchivoPagos.h"
+#include "GestionArchivoReclamos.h"
+#include "GestionArchivoEjercicios.h"
+#include "GestionArchivoDetalleRutinas.h"
+#include "GestionArchivoRutinas.h"
 
 
-class ServicioEntrenador {
+class ServicioEntrenador
+{
 
 private:
     GestionArchivoSocios _archivoSocio;
@@ -21,7 +22,7 @@ private:
     GestionArchivoReclamos _archivoReclamo;
     GestionArchivoRutinas _archivoRutina;
     GestionArchivoDetalleRutinas _archivoDetalleRutina;
-    GestionArtchivoEjercicios _archivoEjercicio;
+    GestionArchivoEjercicios _archivoEjercicio;
 
 public:
     // Constructor

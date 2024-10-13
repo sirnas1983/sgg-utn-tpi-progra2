@@ -1,7 +1,8 @@
 #ifndef DETALLERUTINA_H_INCLUDED
 #define DETALLERUTINA_H_INCLUDED
 
-class DetalleRutina {
+class DetalleRutina
+{
 private:
     int _idEjercicio;
     int _idRutina;

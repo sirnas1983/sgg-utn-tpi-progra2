@@ -3,7 +3,8 @@
 #include "tipoRegistro.h"
 #include "fecha.h"
 
-class RegistroPago {
+class RegistroPago
+{
 private:
     int _idRegistroPago;
     int _idUsuario;

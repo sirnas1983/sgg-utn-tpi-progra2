@@ -1,12 +1,18 @@
 #ifndef SERVICIOSOCIO_H_INCLUDED
 #define SERVICIOSOCIO_H_INCLUDED
 
-#include "gestionArchivoSocio.h"
-#include "gestionArchivoAsistencia.h"
-#include "gestionArchivoPago.h"
-#include "gestionArchivoReclamo.h"
+#include "GestionArchivoSocios.h"
+#include "GestionArchivoEntrenadores.h"
+#include "GestionArchivoAsistencias.h"
+#include "GestionArchivoPagos.h"
+#include "GestionArchivoReclamos.h"
+#include "GestionArchivoEjercicios.h"
+#include "GestionArchivoSocios.h"
+#include "GestionArchivoDetalleRutinas.h"
+#include "GestionArchivoRutinas.h"
 
-class ServicioSocio {
+class ServicioSocio
+{
 
 private:
     GestionArchivoSocios _archivoSocio;
@@ -16,14 +22,14 @@ private:
     GestionArchivoReclamos _archivoReclamo;
     GestionArchivoRutinas _archivoRutina;
     GestionArchivoDetalleRutinas _archivoDetalleRutina;
-    GestionArtchivoEjercicios _archivoEjercicio;
+    GestionArchivoEjercicios _archivoEjercicio;
 
 public:
     // Constructor
     ServicioSocio(GestionArchivoSocios archivoSocio, GestionArchivoEntrenadores archivoEntrenador,
-                   GestionArchivoAsistencias archivoAsistencia, GestionArchivoPagos archivoPago,
-                   GestionArchivoReclamos archivoReclamo, GestionArchivoRutinas archivoRutina,
-                   GestionArchivoDetalleRutinas archivoDetalleRutina, GestionArchivoEjercicios archivoEjercicio);
+                  GestionArchivoAsistencias archivoAsistencia, GestionArchivoPagos archivoPago,
+                  GestionArchivoReclamos archivoReclamo, GestionArchivoRutinas archivoRutina,
+                  GestionArchivoDetalleRutinas archivoDetalleRutina, GestionArchivoEjercicios archivoEjercicio);
 
     void modificarContrasenia(int idSocio);
     void registrarPago(int idSocio);

@@ -2,7 +2,8 @@
 #define FECHA_H_INCLUDED
 #include <string>
 
-class Fecha{
+class Fecha
+{
 private:
     int _dia;
     int _mes;

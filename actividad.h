@@ -1,7 +1,8 @@
 #ifndef ACTIVIDAD_H_INCLUDED
 #define ACTIVIDAD_H_INCLUDED
 
-class Actividad{
+class Actividad
+{
 private:
     int _idActividad;
     char _nombre[50];

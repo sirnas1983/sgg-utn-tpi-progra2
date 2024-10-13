@@ -1,33 +1,95 @@
 #include "GestionArchivoAsistencias.h"
 #include "registroAsistencia.h"
 
-GestionArchivoAsistencias::GestionArchivoAsistencias(std::string nombreArchivo) : _nombreArchivo(nombreArchivo) {}
-
-bool GestionArchivoAsistencias::Guardar(RegistroAsistencia asistencia) {
-    // Implementar lógica para guardar asistencia
-    return false;
+GestionArchivoAsistencias::GestionArchivoAsistencias(std::string nombreArchivo)
+{
+    _nombreArchivo = nombreArchivo;
 }
 
-bool GestionArchivoAsistencias::Guardar(RegistroAsistencia asistencia, int posicion) {
-    // Implementar lógica para guardar asistencia en una posición específica
-    return false;
+bool GestionArchivoAsistencias::Guardar(RegistroAsistencia asistencia)
+{
+    FILE *pArchivo = fopen(_nombreArchivo.c_str(), "ab");
+    if (pArchivo == NULL)
+    {
+        return false;
+    }
+    bool ok = fwrite(&asistencia, sizeof(RegistroAsistencia), 1, pArchivo);
+    fclose(pArchivo);
+    return ok;
 }
 
-int GestionArchivoAsistencias::Buscar(int IDAsistencia) {
-    // Implementar lógica para buscar asistencia por ID
+bool GestionArchivoAsistencias::Guardar(RegistroAsistencia asistencia, int posicion)
+{
+    FILE *pArchivo = fopen(_nombreArchivo.c_str(), "rb+");
+    if (pArchivo == NULL)
+    {
+        return false;
+    }
+    fseek(pArchivo, sizeof(RegistroAsistencia) * posicion, SEEK_SET);
+    bool ok = fwrite(&asistencia, sizeof(RegistroAsistencia), 1, pArchivo);
+    fclose(pArchivo);
+    return ok;
+}
+
+int GestionArchivoAsistencias::Buscar(int IDAsistencia)
+{
+    FILE *pArchivo = fopen(_nombreArchivo.c_str(), "rb");
+    if (pArchivo == NULL)
+    {
+        return -1;
+    }
+    RegistroAsistencia asistencia;
+    int i = 0;
+    while (fread(&asistencia, sizeof(RegistroAsistencia), 1, pArchivo))
+    {
+        if (asistencia.getIdRegistroAsistencia() == IDAsistencia)
+        {
+            fclose(pArchivo);
+            return i;
+        }
+        i++;
+    }
+    fclose(pArchivo);
     return -1;
 }
 
-RegistroAsistencia GestionArchivoAsistencias::Leer(int posicion) {
-    // Implementar lógica para leer una asistencia en una posición específica
-    return RegistroAsistencia();
+RegistroAsistencia GestionArchivoAsistencias::Leer(int posicion)
+{
+    FILE *pArchivo = fopen(_nombreArchivo.c_str(), "rb");
+    if (pArchivo == NULL)
+    {
+        return RegistroAsistencia();
+    }
+    RegistroAsistencia asistencia;
+    fseek(pArchivo, sizeof(RegistroAsistencia) * posicion, SEEK_SET);
+    fread(&asistencia, sizeof(RegistroAsistencia), 1, pArchivo);
+    fclose(pArchivo);
+    return asistencia;
 }
 
-int GestionArchivoAsistencias::CantidadRegistros() {
-    // Implementar lógica para obtener cantidad de registros
-    return 0;
+int GestionArchivoAsistencias::CantidadRegistros()
+{
+    FILE *pArchivo = fopen(_nombreArchivo.c_str(), "rb");
+    if (pArchivo == NULL)
+    {
+        return 0;
+    }
+    fseek(pArchivo, 0, SEEK_END);
+    int cantidadRegistros = ftell(pArchivo) / sizeof(RegistroAsistencia);
+    fclose(pArchivo);
+    return cantidadRegistros;
 }
 
-void GestionArchivoAsistencias::Leer(int cantidadRegistros, RegistroAsistencia *vector) {
-    // Implementar lógica para leer varios registros
+void GestionArchivoAsistencias::Leer(int cantidadRegistros, RegistroAsistencia *vector)
+{
+    FILE *pArchivo = fopen(_nombreArchivo.c_str(), "rb");
+    if (pArchivo == NULL)
+    {
+        return;
+    }
+    for (int i = 0; i < cantidadRegistros; i++)
+    {
+        fread(&vector[i], sizeof(RegistroAsistencia), 1, pArchivo);
+    }
+    fclose(pArchivo);
 }

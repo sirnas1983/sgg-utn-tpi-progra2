@@ -2,7 +2,8 @@
 #define REGISTROASISTENCIA_H_INCLUDED
 #include "fecha.h"
 
-class RegistroAsistencia {
+class RegistroAsistencia
+{
 private:
     int _idRegistroAsistencia;
     int _idUsuario;

@@ -2,7 +2,8 @@
 #include <string>
 #include "Socio.h"
 
-class GestionArchivoSocios {
+class GestionArchivoSocios
+{
 private:
     std::string _nombreArchivo;
 

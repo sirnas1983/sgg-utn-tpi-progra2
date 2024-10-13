@@ -1,7 +1,8 @@
 #ifndef TURNO_H_INCLUDED
 #define TURNO_H_INCLUDED
 
-enum Turno{
+enum Turno
+{
     MANIANA,
     TARDE,
     NOCHE

@@ -5,7 +5,6 @@
 
 class Usuario
 {
-
 protected:
     int _idUsuario;
     char _nombre[50];

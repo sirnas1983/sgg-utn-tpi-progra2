@@ -1,7 +1,8 @@
 #ifndef EJERCICIO_H_INCLUDED
 #define EJERCICIO_H_INCLUDED
 
-class Ejercicio {
+class Ejercicio
+{
 private:
     int _idEjercicio;
     char _nombre[30];

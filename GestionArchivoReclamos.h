@@ -2,7 +2,8 @@
 #include <string>
 #include "Reclamo.h"
 
-class GestionArchivoReclamos {
+class GestionArchivoReclamos
+{
 private:
     std::string _nombreArchivo;
 

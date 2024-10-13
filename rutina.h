@@ -3,7 +3,8 @@
 
 #include <cstring>
 
-class Rutina {
+class Rutina
+{
 private:
     int _idRutina;
     char _nombre[50];

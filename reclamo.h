@@ -2,7 +2,8 @@
 #define RECLAMOS_H_INCLUDED
 #include "fecha.h"
 
-class Reclamo {
+class Reclamo
+{
 private:
     int _idReclamo;
     int _idUsuario;

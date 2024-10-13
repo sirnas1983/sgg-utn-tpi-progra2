@@ -1,13 +1,18 @@
 #ifndef SERVICIOGERENTE_H
 #define SERVICIOGERENTE_H
 
-#include "gestorArchivosSocios.h"
-#include "gestorArchivosGerentes.h"
-#include "gestorArchivosEntrenadores.h"
-#include "gestorArchivosReclamos.h"
-#include "gestorArchivosPagos.h"
+#include "GestionArchivoSocios.h"
+#include "GestionArchivoEntrenadores.h"
+#include "GestionArchivoAsistencias.h"
+#include "GestionArchivoPagos.h"
+#include "GestionArchivoReclamos.h"
+#include "GestionArchivoEjercicios.h"
+#include "GestionArchivoSocios.h"
+#include "GestionArchivoDetalleRutinas.h"
+#include "GestionArchivoRutinas.h"
 
-class ServicioGerente {
+class ServicioGerente
+{
 
 private:
     GestionArchivoSocios _archivoSocio;
@@ -17,14 +22,14 @@ private:
     GestionArchivoReclamos _archivoReclamo;
     GestionArchivoRutinas _archivoRutina;
     GestionArchivoDetalleRutinas _archivoDetalleRutina;
-    GestionArtchivoEjercicios _archivoEjercicio;
+    GestionArchivoEjercicios _archivoEjercicio;
 
 public:
     // Constructor
     ServicioGerente(GestionArchivoSocios archivoSocio, GestionArchivoEntrenadores archivoEntrenador,
-                       GestionArchivoAsistencias archivoAsistencia, GestionArchivoPagos archivoPago,
-                       GestionArchivoReclamos archivoReclamo, GestionArchivoRutinas archivoRutina,
-                       GestionArchivoDetalleRutinas archivoDetalleRutina, GestionArchivoEjercicios archivoEjercicio);
+                    GestionArchivoAsistencias archivoAsistencia, GestionArchivoPagos archivoPago,
+                    GestionArchivoReclamos archivoReclamo, GestionArchivoRutinas archivoRutina,
+                    GestionArchivoDetalleRutinas archivoDetalleRutina, GestionArchivoEjercicios archivoEjercicio);
 
 
     // Metodos de Gestión de Socios

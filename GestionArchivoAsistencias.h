@@ -2,7 +2,8 @@
 #include <string>
 #include "registroAsistencia.h"
 
-class GestionArchivoAsistencias {
+class GestionArchivoAsistencias
+{
 private:
     std::string _nombreArchivo;
 

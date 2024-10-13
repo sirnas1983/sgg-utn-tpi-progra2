@@ -35,94 +35,171 @@
 		<Unit filename="GestionArchivoAsistencias.cpp">
 			<Option virtualFolder="gestorArchivos/" />
 		</Unit>
-		<Unit filename="GestionArchivoAsistencias.h" />
+		<Unit filename="GestionArchivoAsistencias.h">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoDetalleRutinas.cpp">
 			<Option virtualFolder="gestorArchivos/" />
 		</Unit>
-		<Unit filename="GestionArchivoDetalleRutinas.h" />
+		<Unit filename="GestionArchivoDetalleRutinas.h">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoEjercicios.cpp">
 			<Option virtualFolder="gestorArchivos/" />
 		</Unit>
-		<Unit filename="GestionArchivoEjercicios.h" />
+		<Unit filename="GestionArchivoEjercicios.h">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoEntrenadores.cpp">
 			<Option virtualFolder="gestorArchivos/" />
 		</Unit>
-		<Unit filename="GestionArchivoEntrenadores.h" />
+		<Unit filename="GestionArchivoEntrenadores.h">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoPagos.cpp">
 			<Option virtualFolder="gestorArchivos/" />
 		</Unit>
-		<Unit filename="GestionArchivoPagos.h" />
+		<Unit filename="GestionArchivoPagos.h">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoReclamos.cpp">
 			<Option virtualFolder="gestorArchivos/" />
 		</Unit>
-		<Unit filename="GestionArchivoReclamos.h" />
+		<Unit filename="GestionArchivoReclamos.h">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoRutinas.cpp">
 			<Option virtualFolder="gestorArchivos/" />
 		</Unit>
-		<Unit filename="GestionArchivoRutinas.h" />
+		<Unit filename="GestionArchivoRutinas.h">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="GestionArchivoSocios.cpp">
 			<Option virtualFolder="gestorArchivos/" />
 		</Unit>
-		<Unit filename="GestionArchivoSocios.h" />
+		<Unit filename="GestionArchivoSocios.h">
+			<Option virtualFolder="gestorArchivos/" />
+		</Unit>
 		<Unit filename="actividad.cpp">
 			<Option virtualFolder="modelos/" />
 		</Unit>
-		<Unit filename="actividad.h" />
+		<Unit filename="actividad.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
 		<Unit filename="detalleRutina.cpp">
 			<Option virtualFolder="modelos/" />
 		</Unit>
-		<Unit filename="detalleRutina.h" />
+		<Unit filename="detalleRutina.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
 		<Unit filename="ejercicio.cpp">
 			<Option virtualFolder="modelos/" />
 		</Unit>
-		<Unit filename="ejercicio.h" />
+		<Unit filename="ejercicio.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
 		<Unit filename="empleado.cpp">
 			<Option virtualFolder="modelos/" />
 		</Unit>
-		<Unit filename="empleado.h" />
+		<Unit filename="empleado.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
 		<Unit filename="entrenador.cpp">
 			<Option virtualFolder="modelos/" />
 		</Unit>
-		<Unit filename="entrenador.h" />
+		<Unit filename="entrenador.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
 		<Unit filename="fecha.cpp">
 			<Option virtualFolder="modelos/" />
 		</Unit>
-		<Unit filename="fecha.h" />
+		<Unit filename="fecha.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
 		<Unit filename="main.cpp">
 			<Option virtualFolder="menus/" />
 		</Unit>
-		<Unit filename="membresia.h" />
+		<Unit filename="membresia.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="menuEntrenador.cpp">
+			<Option virtualFolder="menus/" />
+		</Unit>
+		<Unit filename="menuGerente.cpp">
+			<Option virtualFolder="menus/" />
+		</Unit>
+		<Unit filename="menuPrincipal.cpp">
+			<Option virtualFolder="menus/" />
+		</Unit>
+		<Unit filename="menuSocio.cpp">
+			<Option virtualFolder="menus/" />
+		</Unit>
 		<Unit filename="reclamo.cpp">
 			<Option virtualFolder="modelos/" />
 		</Unit>
-		<Unit filename="reclamo.h" />
+		<Unit filename="reclamo.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
 		<Unit filename="registroAsistencia.cpp">
 			<Option virtualFolder="modelos/" />
 		</Unit>
-		<Unit filename="registroAsistencia.h" />
+		<Unit filename="registroAsistencia.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
 		<Unit filename="registroPago.cpp">
 			<Option virtualFolder="modelos/" />
 		</Unit>
-		<Unit filename="registroPago.h" />
-		<Unit filename="rol.h" />
+		<Unit filename="registroPago.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="rol.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
 		<Unit filename="rutina.cpp">
 			<Option virtualFolder="modelos/" />
 		</Unit>
-		<Unit filename="rutina.h" />
-		<Unit filename="servicioEntrenador.h" />
-		<Unit filename="servicioGerente.h" />
-		<Unit filename="servicioSocio.h" />
+		<Unit filename="rutina.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="servicioEntrenador.cpp">
+			<Option virtualFolder="servicios/" />
+		</Unit>
+		<Unit filename="servicioEntrenador.h">
+			<Option virtualFolder="servicios/" />
+		</Unit>
+		<Unit filename="servicioGerente.cpp">
+			<Option virtualFolder="servicios/" />
+		</Unit>
+		<Unit filename="servicioGerente.h">
+			<Option virtualFolder="servicios/" />
+		</Unit>
+		<Unit filename="servicioSocio.cpp">
+			<Option virtualFolder="servicios/" />
+		</Unit>
+		<Unit filename="servicioSocio.h">
+			<Option virtualFolder="servicios/" />
+		</Unit>
 		<Unit filename="socio.cpp">
 			<Option virtualFolder="modelos/" />
 		</Unit>
-		<Unit filename="socio.h" />
-		<Unit filename="tipoContrato.h" />
-		<Unit filename="tipoRegistro.h" />
-		<Unit filename="turno.h" />
+		<Unit filename="socio.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="tipoContrato.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="tipoRegistro.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
+		<Unit filename="turno.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
 		<Unit filename="usuario.cpp">
 			<Option virtualFolder="modelos/" />
 		</Unit>
-		<Unit filename="usuario.h" />
+		<Unit filename="usuario.h">
+			<Option virtualFolder="modelos/" />
+		</Unit>
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

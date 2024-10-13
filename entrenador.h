@@ -3,7 +3,8 @@
 
 #include "empleado.h"
 
-class Entrenador : public Empleado {
+class Entrenador : public Empleado
+{
 private:
     float _valorPorHora;
     int _idActividadPrincipal;

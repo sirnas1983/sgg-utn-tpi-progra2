@@ -70,7 +70,8 @@ bool Usuario::getEstaHabilitado() const
 {
     return _estaHabilitado;
 }
-bool Usuario::validarContrasenia(const char* pass){
+bool Usuario::validarContrasenia(const char* pass)
+{
     return pass == _pass;
 }
 void Usuario::setIdUsuario(int idUsuario)

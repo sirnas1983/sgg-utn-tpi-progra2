@@ -2,7 +2,8 @@
 #include <string>
 #include "registroPago.h"
 
-class GestionArchivoPagos {
+class GestionArchivoPagos
+{
 private:
     std::string _nombreArchivo;
 

@@ -1,12 +1,16 @@
 #include "GestionArchivoSocios.h"
+#include "socio.h"
 
-GestionArchivoSocios::GestionArchivoSocios(std::string nombreArchivo) {
+GestionArchivoSocios::GestionArchivoSocios(std::string nombreArchivo)
+{
     _nombreArchivo = nombreArchivo;
 }
 
-bool GestionArchivoSocios::Guardar(Socio socio) {
+bool GestionArchivoSocios::Guardar(Socio socio)
+{
     FILE *pArchivo = fopen(_nombreArchivo.c_str(), "ab");
-    if (pArchivo == NULL) {
+    if (pArchivo == NULL)
+    {
         return false;
     }
     bool ok = fwrite(&socio, sizeof(Socio), 1, pArchivo);
@@ -14,9 +18,11 @@ bool GestionArchivoSocios::Guardar(Socio socio) {
     return ok;
 }
 
-bool GestionArchivoSocios::Guardar(Socio socio, int posicion) {
+bool GestionArchivoSocios::Guardar(Socio socio, int posicion)
+{
     FILE *pArchivo = fopen(_nombreArchivo.c_str(), "rb+");
-    if (pArchivo == NULL) {
+    if (pArchivo == NULL)
+    {
         return false;
     }
     fseek(pArchivo, sizeof(Socio) * posicion, SEEK_SET);
@@ -25,15 +31,19 @@ bool GestionArchivoSocios::Guardar(Socio socio, int posicion) {
     return ok;
 }
 
-int GestionArchivoSocios::Buscar(int IDSocio) {
+int GestionArchivoSocios::Buscar(int IDSocio)
+{
     FILE *pArchivo = fopen(_nombreArchivo.c_str(), "rb");
-    if (pArchivo == NULL) {
+    if (pArchivo == NULL)
+    {
         return -1;
     }
     Socio socio;
     int i = 0;
-    while (fread(&socio, sizeof(Socio), 1, pArchivo)) {
-        if (socio.getIdUsuario() == IDSocio) {
+    while (fread(&socio, sizeof(Socio), 1, pArchivo))
+    {
+        if (socio.getIdUsuario() == IDSocio)
+        {
             fclose(pArchivo);
             return i;
         }
@@ -43,9 +53,11 @@ int GestionArchivoSocios::Buscar(int IDSocio) {
     return -1;
 }
 
-Socio GestionArchivoSocios::Leer(int posicion) {
+Socio GestionArchivoSocios::Leer(int posicion)
+{
     FILE *pArchivo = fopen(_nombreArchivo.c_str(), "rb");
-    if (pArchivo == NULL) {
+    if (pArchivo == NULL)
+    {
         return Socio();
     }
     Socio socio;
@@ -55,9 +67,11 @@ Socio GestionArchivoSocios::Leer(int posicion) {
     return socio;
 }
 
-int GestionArchivoSocios::CantidadRegistros() {
+int GestionArchivoSocios::CantidadRegistros()
+{
     FILE *pArchivo = fopen(_nombreArchivo.c_str(), "rb");
-    if (pArchivo == NULL) {
+    if (pArchivo == NULL)
+    {
         return 0;
     }
     fseek(pArchivo, 0, SEEK_END);
@@ -66,12 +80,15 @@ int GestionArchivoSocios::CantidadRegistros() {
     return cantidadRegistros;
 }
 
-void GestionArchivoSocios::Leer(int cantidadRegistros, Socio *vector) {
+void GestionArchivoSocios::Leer(int cantidadRegistros, Socio *vector)
+{
     FILE *pArchivo = fopen(_nombreArchivo.c_str(), "rb");
-    if (pArchivo == NULL) {
+    if (pArchivo == NULL)
+    {
         return;
     }
-    for (int i = 0; i < cantidadRegistros; i++) {
+    for (int i = 0; i < cantidadRegistros; i++)
+    {
         fread(&vector[i], sizeof(Socio), 1, pArchivo);
     }
     fclose(pArchivo);

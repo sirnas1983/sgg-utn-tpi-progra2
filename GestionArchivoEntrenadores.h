@@ -2,7 +2,8 @@
 #include <string>
 #include "Entrenador.h"
 
-class GestionArchivoEntrenadores {
+class GestionArchivoEntrenadores
+{
 private:
     std::string _nombreArchivo;
 

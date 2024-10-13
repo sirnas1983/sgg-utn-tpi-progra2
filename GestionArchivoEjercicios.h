@@ -1,8 +1,9 @@
 #pragma once
 #include <string>
-#include "Ejercicio.h"
+#include "ejercicio.h"
 
-class GestionArchivoEjercicios {
+class GestionArchivoEjercicios
+{
 private:
     std::string _nombreArchivo;
 
