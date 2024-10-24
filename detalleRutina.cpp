@@ -43,15 +43,21 @@ void DetalleRutina::setIdRutina(int idRutina)
 
 void DetalleRutina::setPeso(float peso)
 {
-    _peso = peso;
+    if (peso >= 0.0f) { // Validación de peso
+        _peso = peso;
+    }
 }
 
 void DetalleRutina::setRepeticiones(int repeticiones)
 {
-    _repeticiones = repeticiones;
+    if (repeticiones >= 0) { // Validación de repeticiones
+        _repeticiones = repeticiones;
+    }
 }
 
 void DetalleRutina::setCantSeries(int cantSeries)
 {
-    _cantSeries = cantSeries;
+    if (cantSeries >= 0) { // Validación de series
+        _cantSeries = cantSeries;
+    }
 }

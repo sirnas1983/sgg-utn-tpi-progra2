@@ -2,20 +2,19 @@
 #include <cstring>
 
 Reclamo::Reclamo()
-    : _idReclamo(0), _idUsuario(0), _estaResuelto(false)
+    : _idReclamo(0), _idUsuario(0), _estaResuelto(false), _fecha(), _detalle("") // Inicializa directamente _detalle
 {
-    _fecha = Fecha();
-    strcpy(_titulo, "");
-    strcpy(_reclamo, "");
 }
 
-Reclamo::Reclamo(int idReclamo, int idUsuario, const Fecha& fecha, bool estaResuelto, const char* titulo, const char* reclamo)
+Reclamo::Reclamo(int idReclamo, int idUsuario, const Fecha& fecha, bool estaResuelto, const char* detalle)
     : _idReclamo(idReclamo), _idUsuario(idUsuario), _fecha(fecha), _estaResuelto(estaResuelto)
 {
-    strncpy(_titulo, titulo, sizeof(_titulo) - 1);
-    _titulo[sizeof(_titulo) - 1] = '\0';
-    strncpy(_reclamo, reclamo, sizeof(_reclamo) - 1);
-    _reclamo[sizeof(_reclamo) - 1] = '\0';
+    if (detalle) {
+        strncpy(_detalle, detalle, sizeof(_detalle) - 1);
+        _detalle[sizeof(_detalle) - 1] = '\0';
+    } else {
+        strcpy(_detalle, ""); // Manejo de puntero nulo
+    }
 }
 
 int Reclamo::getIdReclamo() const
@@ -38,24 +37,19 @@ bool Reclamo::getEstaResuelto() const
     return _estaResuelto;
 }
 
-const char* Reclamo::getTitulo() const
+const char* Reclamo::getDetalle() const
 {
-    return _titulo;
-}
-
-const char* Reclamo::getReclamo() const
-{
-    return _reclamo;
+    return _detalle;
 }
 
 void Reclamo::setIdReclamo(int idReclamo)
 {
-    _idReclamo = idReclamo;
+    _idReclamo = idReclamo; // Considera validar si es negativo
 }
 
 void Reclamo::setIdUsuario(int idUsuario)
 {
-    _idUsuario = idUsuario;
+    _idUsuario = idUsuario; // Considera validar si es negativo
 }
 
 void Reclamo::setFecha(const Fecha& fecha)
@@ -68,14 +62,12 @@ void Reclamo::setEstaResuelto(bool estaResuelto)
     _estaResuelto = estaResuelto;
 }
 
-void Reclamo::setTitulo(const char* titulo)
+void Reclamo::setDetalle(const char* detalle)
 {
-    strncpy(_titulo, titulo, sizeof(_titulo) - 1);
-    _titulo[sizeof(_titulo) - 1] = '\0';
-}
-
-void Reclamo::setReclamo(const char* reclamo)
-{
-    strncpy(_reclamo, reclamo, sizeof(_reclamo) - 1);
-    _reclamo[sizeof(_reclamo) - 1] = '\0';
+    if (detalle) {
+        strncpy(_detalle, detalle, sizeof(_detalle) - 1);
+        _detalle[sizeof(_detalle) - 1] = '\0';
+    } else {
+        strcpy(_detalle, ""); // Manejo de puntero nulo
+    }
 }

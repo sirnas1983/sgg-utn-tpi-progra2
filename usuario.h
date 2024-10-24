@@ -1,5 +1,6 @@
 #ifndef USUARIO_H_INCLUDED
 #define USUARIO_H_INCLUDED
+
 #include "rol.h"
 #include "fecha.h"
 
@@ -10,16 +11,17 @@ protected:
     char _nombre[50];
     char _apellido[50];
     int _dni;
+    Fecha _fechaNacimiento;
     Fecha _fechaIngreso;
     char _pass[20];
     Rol _rol;
-    Fecha _fechaNacimiento;
     bool _estaHabilitado;
 
 public:
     Usuario();
-    Usuario(int idUsuario, const char* nombre, const char* apellido, int dni, Fecha fechaIngreso, const char* pass, Rol rol, Fecha fechaNacimiento, bool estaHabilitado);
+    Usuario(int idUsuario, const char* nombre, const char* apellido, int dni, Fecha fechaNacimiento, Fecha fechaIngreso, const char* pass, Rol rol, bool estaHabilitado);
 
+    // Getters
     int getIdUsuario() const;
     const char* getNombre() const;
     const char* getApellido() const;
@@ -31,6 +33,7 @@ public:
     bool getEstaHabilitado() const;
     bool validarContrasenia(const char* pass);
 
+    // Setters
     void setIdUsuario(int idUsuario);
     void setNombre(const char* nombre);
     void setApellido(const char* apellido);

@@ -12,7 +12,7 @@ private:
 
 public:
     DetalleRutina();
-    DetalleRutina(int idEjercicio, int idRutina, float peso, int repeticiones, int cantSeries); // Constructor con parámetros
+    DetalleRutina(int idEjercicio, int idRutina, float peso, int repeticiones, int cantSeries);
 
     int getIdEjercicio() const;
     int getIdRutina() const;
@@ -28,4 +28,3 @@ public:
 };
 
 #endif // DETALLERUTINA_H_INCLUDED
-

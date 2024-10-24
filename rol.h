@@ -5,7 +5,7 @@ enum Rol
 {
     SOCIO,
     ENTRENADOR,
-    ADMIN
+    GERENTE
 };
 
 #endif

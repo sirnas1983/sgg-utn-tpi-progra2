@@ -198,3 +198,232 @@
 	"GestionArchivoDetalleRutinas.h"
 	"GestionArchivoRutinas.h"
 
+1729792893 source:c:\darhie\sgg-utn-tpi-progra2\actividad.cpp
+	"actividad.h"
+	<cstring>
+
+1729792857 c:\darhie\sgg-utn-tpi-progra2\actividad.h
+
+1729792995 source:c:\darhie\sgg-utn-tpi-progra2\detallerutina.cpp
+	"detalleRutina.h"
+
+1729792982 c:\darhie\sgg-utn-tpi-progra2\detallerutina.h
+
+1729793086 source:c:\darhie\sgg-utn-tpi-progra2\ejercicio.cpp
+	"ejercicio.h"
+	<cstring>
+
+1729793076 c:\darhie\sgg-utn-tpi-progra2\ejercicio.h
+
+1729794300 source:c:\darhie\sgg-utn-tpi-progra2\empleado.cpp
+	"empleado.h"
+	"turno.h"
+
+1729794316 c:\darhie\sgg-utn-tpi-progra2\empleado.h
+	"usuario.h"
+	"actividad.h"
+	"turno.h"
+
+1729794709 c:\darhie\sgg-utn-tpi-progra2\usuario.h
+	"rol.h"
+	"fecha.h"
+
+1729791439 c:\darhie\sgg-utn-tpi-progra2\rol.h
+
+1729783618 c:\darhie\sgg-utn-tpi-progra2\fecha.h
+	<string>
+
+1729783619 c:\darhie\sgg-utn-tpi-progra2\turno.h
+
+1729783619 c:\darhie\sgg-utn-tpi-progra2\tipocontrato.h
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\fecha.cpp
+	"fecha.h"
+	<iostream>
+	<string>
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\gestionarchivoasistencias.cpp
+	"GestionArchivoAsistencias.h"
+	"registroAsistencia.h"
+
+1729783618 c:\darhie\sgg-utn-tpi-progra2\gestionarchivoasistencias.h
+	<string>
+	"registroAsistencia.h"
+
+1729793458 c:\darhie\sgg-utn-tpi-progra2\registroasistencia.h
+	"fecha.h"
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\gestionarchivodetallerutinas.cpp
+	"GestionArchivoDetalleRutinas.h"
+	"detalleRutina.h"
+
+1729783618 c:\darhie\sgg-utn-tpi-progra2\gestionarchivodetallerutinas.h
+	<string>
+	"DetalleRutina.h"
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\gestionarchivoejercicios.cpp
+	"GestionArchivoEjercicios.h"
+	"ejercicio.h"
+
+1729783618 c:\darhie\sgg-utn-tpi-progra2\gestionarchivoejercicios.h
+	<string>
+	"ejercicio.h"
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\gestionarchivoentrenadores.cpp
+	"GestionArchivoEntrenadores.h"
+	"entrenador.h"
+
+1729783618 c:\darhie\sgg-utn-tpi-progra2\gestionarchivoentrenadores.h
+	<string>
+	"Entrenador.h"
+
+1729783618 c:\darhie\sgg-utn-tpi-progra2\entrenador.h
+	"empleado.h"
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\gestionarchivopagos.cpp
+	"GestionArchivoPagos.h"
+	"registroPago.h"
+
+1729783618 c:\darhie\sgg-utn-tpi-progra2\gestionarchivopagos.h
+	<string>
+	"registroPago.h"
+
+1729793522 c:\darhie\sgg-utn-tpi-progra2\registropago.h
+	"fecha.h"
+
+1729783619 c:\darhie\sgg-utn-tpi-progra2\tiporegistro.h
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\gestionarchivoreclamos.cpp
+	"GestionArchivoReclamos.h"
+	"reclamo.h"
+
+1729783618 c:\darhie\sgg-utn-tpi-progra2\gestionarchivoreclamos.h
+	<string>
+	"Reclamo.h"
+
+1729793347 c:\darhie\sgg-utn-tpi-progra2\reclamo.h
+	"fecha.h"
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\gestionarchivorutinas.cpp
+	"GestionArchivoRutinas.h"
+	"rutina.h"
+
+1729783618 c:\darhie\sgg-utn-tpi-progra2\gestionarchivorutinas.h
+	<string>
+	"Rutina.h"
+
+1729783619 c:\darhie\sgg-utn-tpi-progra2\rutina.h
+	<cstring>
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\gestionarchivosocios.cpp
+	"GestionArchivoSocios.h"
+	"socio.h"
+
+1729783618 c:\darhie\sgg-utn-tpi-progra2\gestionarchivosocios.h
+	<string>
+	"Socio.h"
+
+1729794516 c:\darhie\sgg-utn-tpi-progra2\socio.h
+	"membresia.h"
+	"usuario.h"
+
+1729783618 c:\darhie\sgg-utn-tpi-progra2\membresia.h
+
+1729797353 source:c:\darhie\sgg-utn-tpi-progra2\main.cpp
+	"menuPrincipal.h"
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\menuentrenador.cpp
+	<cstring>
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\menugerente.cpp
+	<cstring>
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\menuprincipal.cpp
+	<cstring>
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\menusocio.cpp
+	<cstring>
+
+1729794006 source:c:\darhie\sgg-utn-tpi-progra2\usuario.cpp
+	"usuario.h"
+	<cstring>
+
+1729783619 source:c:\darhie\sgg-utn-tpi-progra2\rutina.cpp
+	"rutina.h"
+
+1729783619 source:c:\darhie\sgg-utn-tpi-progra2\servicioentrenador.cpp
+	"ServicioEntrenador.h"
+
+1729783619 c:\darhie\sgg-utn-tpi-progra2\servicioentrenador.h
+	"GestionArchivoSocios.h"
+	"GestionArchivoEntrenadores.h"
+	"GestionArchivoAsistencias.h"
+	"GestionArchivoPagos.h"
+	"GestionArchivoReclamos.h"
+	"GestionArchivoEjercicios.h"
+	"GestionArchivoDetalleRutinas.h"
+	"GestionArchivoRutinas.h"
+
+1729783619 source:c:\darhie\sgg-utn-tpi-progra2\serviciogerente.cpp
+	"ServicioGerente.h"
+
+1729783619 c:\darhie\sgg-utn-tpi-progra2\serviciogerente.h
+	"GestionArchivoSocios.h"
+	"GestionArchivoEntrenadores.h"
+	"GestionArchivoAsistencias.h"
+	"GestionArchivoPagos.h"
+	"GestionArchivoReclamos.h"
+	"GestionArchivoEjercicios.h"
+	"GestionArchivoSocios.h"
+	"GestionArchivoDetalleRutinas.h"
+	"GestionArchivoRutinas.h"
+
+1729783619 source:c:\darhie\sgg-utn-tpi-progra2\serviciosocio.cpp
+	"ServicioSocio.h"
+
+1729783619 c:\darhie\sgg-utn-tpi-progra2\serviciosocio.h
+	"GestionArchivoSocios.h"
+	"GestionArchivoEntrenadores.h"
+	"GestionArchivoAsistencias.h"
+	"GestionArchivoPagos.h"
+	"GestionArchivoReclamos.h"
+	"GestionArchivoEjercicios.h"
+	"GestionArchivoSocios.h"
+	"GestionArchivoDetalleRutinas.h"
+	"GestionArchivoRutinas.h"
+
+1729794489 source:c:\darhie\sgg-utn-tpi-progra2\socio.cpp
+	"socio.h"
+	<cstring>
+
+1729793356 source:c:\darhie\sgg-utn-tpi-progra2\reclamo.cpp
+	"reclamo.h"
+	<cstring>
+
+1729793468 source:c:\darhie\sgg-utn-tpi-progra2\registroasistencia.cpp
+	"registroAsistencia.h"
+
+1729793582 source:c:\darhie\sgg-utn-tpi-progra2\registropago.cpp
+	"registroPago.h"
+
+1729795036 source:c:\darhie\sgg-utn-tpi-progra2\usuarioautenticado.cpp
+	"usuarioAutenticado.h"
+	<cstring>
+
+1729795013 c:\darhie\sgg-utn-tpi-progra2\usuarioautenticado.h
+	"rol.h"
+	"fecha.h"
+
+1729800749 c:\darhie\sgg-utn-tpi-progra2\menuprincipal.h
+	"usuarioAutenticado.h"
+
+1729797629 source:c:\darhie\sgg-utn-tpi-progra2\autenticador.cpp
+	"autenticador.h"
+	"usuario.h"
+	<cstring>
+
+1729797520 c:\darhie\sgg-utn-tpi-progra2\autenticador.h
+	"usuarioAutenticado.h"
+	"usuario.h"
+	"rol.h"
+

@@ -1,12 +1,12 @@
 #include "registroAsistencia.h"
 
 RegistroAsistencia::RegistroAsistencia()
-    : _idRegistroAsistencia(0), _idUsuario(0), _idActividad(0), _fecha(Fecha()), _horaIngreso(0), _horaSalida(0)
+    : _idRegistroAsistencia(0), _idUsuario(0), _idActividad(0), _fecha() // Utiliza constructor por defecto de Fecha
 {
 }
 
-RegistroAsistencia::RegistroAsistencia(int idRegistroAsistencia, int idUsuario, int idActividad, Fecha fecha, int horaIngreso, int horaSalida)
-    : _idRegistroAsistencia(idRegistroAsistencia), _idUsuario(idUsuario), _idActividad(idActividad), _fecha(fecha), _horaIngreso(horaIngreso), _horaSalida(horaSalida)
+RegistroAsistencia::RegistroAsistencia(int idRegistroAsistencia, int idUsuario, int idActividad, const Fecha& fecha)
+    : _idRegistroAsistencia(idRegistroAsistencia), _idUsuario(idUsuario), _idActividad(idActividad), _fecha(fecha)
 {
 }
 
@@ -30,42 +30,22 @@ Fecha RegistroAsistencia::getFecha() const
     return _fecha;
 }
 
-int RegistroAsistencia::getHoraIngreso() const
-{
-    return _horaIngreso;
-}
-
-int RegistroAsistencia::getHoraSalida() const
-{
-    return _horaSalida;
-}
-
 void RegistroAsistencia::setIdRegistroAsistencia(int idRegistroAsistencia)
 {
-    _idRegistroAsistencia = idRegistroAsistencia;
+    _idRegistroAsistencia = idRegistroAsistencia; // Considera validar si es negativo
 }
 
 void RegistroAsistencia::setIdUsuario(int idUsuario)
 {
-    _idUsuario = idUsuario;
+    _idUsuario = idUsuario; // Considera validar si es negativo
 }
 
 void RegistroAsistencia::setIdActividad(int idActividad)
 {
-    _idActividad = idActividad;
+    _idActividad = idActividad; // Considera validar si es negativo
 }
 
 void RegistroAsistencia::setFecha(const Fecha& fecha)
 {
     _fecha = fecha;
-}
-
-void RegistroAsistencia::setHoraIngreso(int horaIngreso)
-{
-    _horaIngreso = horaIngreso;
-}
-
-void RegistroAsistencia::setHoraSalida(int horaSalida)
-{
-    _horaSalida = horaSalida;
 }

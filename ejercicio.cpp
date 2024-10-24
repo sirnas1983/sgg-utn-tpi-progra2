@@ -11,10 +11,19 @@ Ejercicio::Ejercicio()
 Ejercicio::Ejercicio(int idEjercicio, const char* nombre, const char* descripcion)
     : _idEjercicio(idEjercicio)
 {
-    strncpy(_nombre, nombre, sizeof(_nombre) - 1);
-    _nombre[sizeof(_nombre) - 1] = '\0';
-    strncpy(_descripcion, descripcion, sizeof(_descripcion) - 1);
-    _descripcion[sizeof(_descripcion) - 1] = '\0';
+    if (nombre) {
+        strncpy(_nombre, nombre, sizeof(_nombre) - 1);
+        _nombre[sizeof(_nombre) - 1] = '\0';
+    } else {
+        strcpy(_nombre, ""); // Manejo de puntero nulo
+    }
+
+    if (descripcion) {
+        strncpy(_descripcion, descripcion, sizeof(_descripcion) - 1);
+        _descripcion[sizeof(_descripcion) - 1] = '\0';
+    } else {
+        strcpy(_descripcion, ""); // Manejo de puntero nulo
+    }
 }
 
 int Ejercicio::getIdEjercicio() const
@@ -32,7 +41,6 @@ const char* Ejercicio::getDescripcion() const
     return _descripcion;
 }
 
-
 void Ejercicio::setIdEjercicio(int idEjercicio)
 {
     _idEjercicio = idEjercicio;
@@ -40,12 +48,20 @@ void Ejercicio::setIdEjercicio(int idEjercicio)
 
 void Ejercicio::setNombre(const char* nombre)
 {
-    strncpy(_nombre, nombre, sizeof(_nombre) - 1);
-    _nombre[sizeof(_nombre) - 1] = '\0';
+    if (nombre) {
+        strncpy(_nombre, nombre, sizeof(_nombre) - 1);
+        _nombre[sizeof(_nombre) - 1] = '\0';
+    } else {
+        strcpy(_nombre, ""); // Manejo de puntero nulo
+    }
 }
 
 void Ejercicio::setDescripcion(const char* descripcion)
 {
-    strncpy(_descripcion, descripcion, sizeof(_descripcion) - 1);
-    _descripcion[sizeof(_descripcion) - 1] = '\0';
+    if (descripcion) {
+        strncpy(_descripcion, descripcion, sizeof(_descripcion) - 1);
+        _descripcion[sizeof(_descripcion) - 1] = '\0';
+    } else {
+        strcpy(_descripcion, ""); // Manejo de puntero nulo
+    }
 }

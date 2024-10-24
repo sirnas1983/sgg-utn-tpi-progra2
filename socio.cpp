@@ -1,74 +1,39 @@
 #include "socio.h"
 #include <cstring>
 
-Socio::Socio() : Usuario()
+Socio::Socio()
+    : Usuario(), _membresia(Membresia::FIT), _idRutina(0), _idEntrenadorAsignado(0), _pinIngreso(0)
 {
-    _membresia = Membresia::FIT;
     strcpy(_estadoFisico, "");
-    _idRutina = 0;
-    _idEntrenadorAsignado = 0;
-    _pinIngreso = 0;
 }
 
-Socio::Socio(int idUsuario, const char* nombre, const char* apellido, int dni, Fecha fechaIngreso, const char* pass, Rol rol, Fecha fechaNacimiento, bool estaHabilitado,
+Socio::Socio(int idUsuario, const char* nombre, const char* apellido, int dni, Fecha fechaNacimiento, Fecha fechaIngreso, const char* pass, Rol rol, bool estaHabilitado,
              Membresia membresia, const char* estadoFisico, int idRutina, int idEntrenadorAsignado, int pinIngreso)
-    : Usuario(idUsuario, nombre, apellido, dni, fechaIngreso, pass, rol, fechaNacimiento, estaHabilitado)
+    : Usuario(idUsuario, nombre, apellido, dni, fechaNacimiento, fechaIngreso, pass, rol, estaHabilitado), // Llamada al constructor base Usuario
+      _membresia(membresia), _idRutina(idRutina), _idEntrenadorAsignado(idEntrenadorAsignado), _pinIngreso(pinIngreso)
 {
-    _membresia = membresia;
     strncpy(_estadoFisico, estadoFisico, sizeof(_estadoFisico) - 1);
-    _estadoFisico[sizeof(_estadoFisico) - 1] = '\0';
-    _idRutina = idRutina;
-    _idEntrenadorAsignado = idEntrenadorAsignado;
-    _pinIngreso = pinIngreso;
+    _estadoFisico[sizeof(_estadoFisico) - 1] = '\0'; // Asegurarse de que la cadena esté terminada en nulo
 }
 
-Membresia Socio::getMembresia() const
-{
-    return _membresia;
-}
-void Socio::setMembresia(Membresia membresia)
-{
-    _membresia = membresia;
-}
+// Getters
+Membresia Socio::getMembresia() const { return _membresia; }
+const char* Socio::getEstadoFisico() const { return _estadoFisico; }
+int Socio::getIdRutina() const { return _idRutina; }
+int Socio::getIdEntrenadorAsignado() const { return _idEntrenadorAsignado; }
+int Socio::getPinIngreso() const { return _pinIngreso; }
 
-const char* Socio::getEstadoFisico() const
-{
-    return _estadoFisico;
-}
+// Setters
+void Socio::setMembresia(Membresia membresia) { _membresia = membresia; }
+
 void Socio::setEstadoFisico(const char* estadoFisico)
 {
     strncpy(_estadoFisico, estadoFisico, sizeof(_estadoFisico) - 1);
     _estadoFisico[sizeof(_estadoFisico) - 1] = '\0';
 }
 
-int Socio::getIdRutina() const
-{
-    return _idRutina;
-}
-void Socio::setIdRutina(int idRutina)
-{
-    _idRutina = idRutina;
-}
+void Socio::setIdRutina(int idRutina) { _idRutina = idRutina; }
+void Socio::setIdEntrenadorAsignado(int idEntrenadorAsignado) { _idEntrenadorAsignado = idEntrenadorAsignado; }
+void Socio::setPinIngreso(int pinIngreso) { _pinIngreso = pinIngreso; }
 
-int Socio::getIdEntrenadorAsignado() const
-{
-    return _idEntrenadorAsignado;
-}
-void Socio::setIdEntrenadorAsignado(int idEntrenadorAsignado)
-{
-    _idEntrenadorAsignado = idEntrenadorAsignado;
-}
-
-int Socio::getPinIngreso() const
-{
-    return _pinIngreso;
-}
-void Socio::setPinIngreso(int pinIngreso)
-{
-    _pinIngreso = pinIngreso;
-}
-
-bool Socio::validarPin(int pin)
-{
-    return pin == _pinIngreso;
-}
+bool Socio::validarPin(int pin) const { return pin == _pinIngreso; }

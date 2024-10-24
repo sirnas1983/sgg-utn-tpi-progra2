@@ -22,4 +22,3 @@ public:
 };
 
 #endif // EJERCICIO_H_INCLUDED
-

@@ -1,5 +1,6 @@
 #ifndef SOCIO_H_INCLUDED
 #define SOCIO_H_INCLUDED
+
 #include "membresia.h"
 #include "usuario.h"
 
@@ -13,26 +14,27 @@ private:
     int _pinIngreso;
 
 public:
+    // Constructores
     Socio();
-    Socio(int idUsuario, const char* nombre, const char* apellido, int dni, Fecha fechaIngreso, const char* pass, Rol rol, Fecha fechaNacimiento, bool estaHabilitado,
+    Socio(int idUsuario, const char* nombre, const char* apellido, int dni, Fecha fechaNacimiento, Fecha fechaIngreso, const char* pass, Rol rol, bool estaHabilitado,
           Membresia membresia, const char* estadoFisico, int idRutina, int idEntrenadorAsignado, int pinIngreso);
 
+    // Getters
     Membresia getMembresia() const;
-    void setMembresia(Membresia membresia);
-
     const char* getEstadoFisico() const;
-    void setEstadoFisico(const char* estadoFisico);
-
     int getIdRutina() const;
-    void setIdRutina(int idRutina);
-
     int getIdEntrenadorAsignado() const;
-    void setIdEntrenadorAsignado(int idEntrenadorAsignado);
-
     int getPinIngreso() const;
+
+    // Setters
+    void setMembresia(Membresia membresia);
+    void setEstadoFisico(const char* estadoFisico);
+    void setIdRutina(int idRutina);
+    void setIdEntrenadorAsignado(int idEntrenadorAsignado);
     void setPinIngreso(int pinIngreso);
 
-    bool validarPin(int pin);
+    // Métodos adicionales
+    bool validarPin(int pin) const;
 };
 
-#endif
+#endif // SOCIO_H_INCLUDED
