@@ -3,52 +3,46 @@
 #include "menuSocio.h"
 using namespace std;
 
-MenuSocio::MenuSocio(const UsuarioAutenticado& usuario) : _usuario(usuario) {}
+MenuSocio::MenuSocio(UsuarioAutenticado* usuario) {
+    _usuario = usuario;
+}
 
 void MenuSocio::mostrarMenu() {
     int opcion;
 
     do {
         cout << "Menu Socio:\n";
-        cout << "1. Modificar datos personales\n";
-        cout << "2. Ver entrenador designado\n";
-        cout << "3. Ver estado contable\n";
-        cout << "4. Mi rutina\n";
-        cout << "5. Cambiar membresía\n";
-        cout << "6. Realizar pago\n";
-        cout << "7. Consultar horarios\n";
-        cout << "8. Presentar reclamo\n";
-        cout << "9. Modificar contraseña\n";
+        cout << "1. Ver entrenador designado\n";
+        cout << "2. Mi rutina\n";
+        cout << "3. Cambiar membresía\n";
+        cout << "4. Realizar pago\n";
+        cout << "5. Consultar horarios\n";
+        cout << "6. Presentar reclamo\n";
+        cout << "7. Modificar contraseña\n";
         cout << "0. Salir\n";
         cout << "Seleccione una opción: ";
         cin >> opcion;
 
         switch (opcion) {
             case 1:
-                modificarDatosPersonales();
-                break;
-            case 2:
                 verEntrenadorDesignado();
                 break;
+            case 2:
+                verMiRutina();
+                break;
             case 3:
-                verEstadoContable();
-                break;
-            case 4:
-                miRutina();
-                break;
-            case 5:
                 cambiarMembresia();
                 break;
-            case 6:
+            case 4:
                 realizarPago();
                 break;
-            case 7:
+            case 5:
                 consultarHorarios();
                 break;
-            case 8:
+            case 6:
                 presentarReclamo();
                 break;
-            case 9:
+            case 7:
                 modificarContrasena();
                 break;
             case 0:
@@ -63,22 +57,13 @@ void MenuSocio::mostrarMenu() {
     } while (opcion != 0);
 }
 
-void MenuSocio::modificarDatosPersonales() {
-    // Implementar la lógica para modificar datos personales
-    cout << "Modificar datos personales...\n";
-}
 
 void MenuSocio::verEntrenadorDesignado() {
-    // Implementar la lógica para ver entrenador designado
+
     cout << "Ver entrenador designado...\n";
 }
 
-void MenuSocio::verEstadoContable() {
-    // Implementar la lógica para ver estado contable
-    cout << "Ver estado contable...\n";
-}
-
-void MenuSocio::miRutina() {
+void MenuSocio::verMiRutina() {
     // Implementar la lógica para mostrar la rutina
     cout << "Mi rutina...\n";
 }
@@ -107,3 +92,5 @@ void MenuSocio::modificarContrasena() {
     // Implementar la lógica para modificar la contraseña
     cout << "Modificar contraseña...\n";
 }
+
+

@@ -5,16 +5,14 @@
 
 class MenuSocio {
     private:
-        UsuarioAutenticado _usuario;
+        UsuarioAutenticado* _usuario;
 
     public:
-        MenuSocio(const UsuarioAutenticado& usuario);
+        MenuSocio(UsuarioAutenticado* usuario);
         void mostrarMenu();
 
-        void modificarDatosPersonales();
         void verEntrenadorDesignado();
-        void verEstadoContable();
-        void miRutina();
+        void verMiRutina();
         void cambiarMembresia();
         void realizarPago();
         void consultarHorarios();

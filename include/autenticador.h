@@ -8,9 +8,9 @@
 
 class Autenticador {
 public:
-    UsuarioAutenticado* autenticar(const int dni, const char* pass, const Rol rol);
+    UsuarioAutenticado* autenticar(const int dni, const char* pass);
 private:
-    Usuario* buscarUsuario(const int dni, const char* pass, const Rol rol);
+    Usuario* buscarUsuario(const int dni, const char* pass);
 };
 
 #endif // AUTENTICADOR_H_INCLUDED

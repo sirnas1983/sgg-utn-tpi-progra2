@@ -315,13 +315,13 @@
 1729783619 c:\darhie\sgg-utn-tpi-progra2\rutina.h
 	<cstring>
 
-1729783618 source:c:\darhie\sgg-utn-tpi-progra2\gestionarchivosocios.cpp
-	"GestionArchivoSocios.h"
+1729855604 source:c:\darhie\sgg-utn-tpi-progra2\gestionarchivosocios.cpp
+	"gestionArchivoSocios.h"
 	"socio.h"
 
-1729783618 c:\darhie\sgg-utn-tpi-progra2\gestionarchivosocios.h
+1729853364 c:\darhie\sgg-utn-tpi-progra2\gestionarchivosocios.h
 	<string>
-	"Socio.h"
+	"socio.h"
 
 1729794516 c:\darhie\sgg-utn-tpi-progra2\socio.h
 	"membresia.h"
@@ -338,11 +338,18 @@
 1729783618 source:c:\darhie\sgg-utn-tpi-progra2\menugerente.cpp
 	<cstring>
 
-1729783618 source:c:\darhie\sgg-utn-tpi-progra2\menuprincipal.cpp
+1729855409 source:c:\darhie\sgg-utn-tpi-progra2\menuprincipal.cpp
+	<iostream>
 	<cstring>
+	"autenticador.h"
+	"menuPrincipal.h"
+	"menuSocio.h"
+	"rol.h"
 
-1729783618 source:c:\darhie\sgg-utn-tpi-progra2\menusocio.cpp
+1729853735 source:c:\darhie\sgg-utn-tpi-progra2\menusocio.cpp
+	<iostream>
 	<cstring>
+	"menuSocio.h"
 
 1729794006 source:c:\darhie\sgg-utn-tpi-progra2\usuario.cpp
 	"usuario.h"
@@ -417,13 +424,169 @@
 1729800749 c:\darhie\sgg-utn-tpi-progra2\menuprincipal.h
 	"usuarioAutenticado.h"
 
-1729797629 source:c:\darhie\sgg-utn-tpi-progra2\autenticador.cpp
+1729855760 source:c:\darhie\sgg-utn-tpi-progra2\autenticador.cpp
 	"autenticador.h"
 	"usuario.h"
 	<cstring>
+	"gestionArchivoEmpleados.h"
+	"gestionArchivoSocios.h"
 
-1729797520 c:\darhie\sgg-utn-tpi-progra2\autenticador.h
+1729853937 c:\darhie\sgg-utn-tpi-progra2\autenticador.h
 	"usuarioAutenticado.h"
 	"usuario.h"
 	"rol.h"
+
+1729853845 c:\darhie\sgg-utn-tpi-progra2\menusocio.h
+	"usuarioAutenticado.h"
+
+1729854339 source:c:\darhie\sgg-utn-tpi-progra2\gestionarchivoempleados.cpp
+	"gestionArchivoEmpleados.h"
+
+1729854107 c:\darhie\sgg-utn-tpi-progra2\gestionarchivoempleados.h
+	<string>
+	"empleado.h"
+
+1729792893 source:c:\darhie\sgg-utn-tpi-progra2\src\actividad.cpp
+	"actividad.h"
+	<cstring>
+
+1729792857 c:\darhie\sgg-utn-tpi-progra2\include\actividad.h
+
+1729855760 source:c:\darhie\sgg-utn-tpi-progra2\src\autenticador.cpp
+	"autenticador.h"
+	"usuario.h"
+	<cstring>
+	"gestionArchivoEmpleados.h"
+	"gestionArchivoSocios.h"
+
+1729853937 c:\darhie\sgg-utn-tpi-progra2\include\autenticador.h
+	"usuarioAutenticado.h"
+	"usuario.h"
+	"rol.h"
+
+1729795013 c:\darhie\sgg-utn-tpi-progra2\include\usuarioautenticado.h
+	"rol.h"
+	"fecha.h"
+
+1729791439 c:\darhie\sgg-utn-tpi-progra2\include\rol.h
+
+1729783618 c:\darhie\sgg-utn-tpi-progra2\include\fecha.h
+	<string>
+
+1729794709 c:\darhie\sgg-utn-tpi-progra2\include\usuario.h
+	"rol.h"
+	"fecha.h"
+
+1729854107 c:\darhie\sgg-utn-tpi-progra2\include\gestionarchivoempleados.h
+	<string>
+	"empleado.h"
+
+1729794316 c:\darhie\sgg-utn-tpi-progra2\include\empleado.h
+	"usuario.h"
+	"actividad.h"
+	"turno.h"
+
+1729783619 c:\darhie\sgg-utn-tpi-progra2\include\turno.h
+
+1729853364 c:\darhie\sgg-utn-tpi-progra2\include\gestionarchivosocios.h
+	<string>
+	"socio.h"
+
+1729794516 c:\darhie\sgg-utn-tpi-progra2\include\socio.h
+	"membresia.h"
+	"usuario.h"
+
+1729783618 c:\darhie\sgg-utn-tpi-progra2\include\membresia.h
+
+1729792995 source:c:\darhie\sgg-utn-tpi-progra2\src\detallerutina.cpp
+	"detalleRutina.h"
+
+1729792982 c:\darhie\sgg-utn-tpi-progra2\include\detallerutina.h
+
+1729793086 source:c:\darhie\sgg-utn-tpi-progra2\src\ejercicio.cpp
+	"ejercicio.h"
+	<cstring>
+
+1729793076 c:\darhie\sgg-utn-tpi-progra2\include\ejercicio.h
+
+1729794300 source:c:\darhie\sgg-utn-tpi-progra2\src\empleado.cpp
+	"empleado.h"
+	"turno.h"
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\src\fecha.cpp
+	"fecha.h"
+	<iostream>
+	<string>
+
+1729854339 source:c:\darhie\sgg-utn-tpi-progra2\src\gestionarchivoempleados.cpp
+	"gestionArchivoEmpleados.h"
+
+1729855604 source:c:\darhie\sgg-utn-tpi-progra2\src\gestionarchivosocios.cpp
+	"gestionArchivoSocios.h"
+	"socio.h"
+
+1729797353 source:c:\darhie\sgg-utn-tpi-progra2\src\main.cpp
+	"menuPrincipal.h"
+
+1729800749 c:\darhie\sgg-utn-tpi-progra2\include\menuprincipal.h
+	"usuarioAutenticado.h"
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\src\menuentrenador.cpp
+	<cstring>
+
+1729783618 source:c:\darhie\sgg-utn-tpi-progra2\src\menugerente.cpp
+	<cstring>
+
+1729855932 source:c:\darhie\sgg-utn-tpi-progra2\src\menuprincipal.cpp
+	<iostream>
+	<cstring>
+	"autenticador.h"
+	"menuPrincipal.h"
+	"menuSocio.h"
+	"rol.h"
+
+1729856048 c:\darhie\sgg-utn-tpi-progra2\include\menusocio.h
+	"usuarioAutenticado.h"
+
+1729793356 source:c:\darhie\sgg-utn-tpi-progra2\src\reclamo.cpp
+	"reclamo.h"
+	<cstring>
+
+1729793347 c:\darhie\sgg-utn-tpi-progra2\include\reclamo.h
+	"fecha.h"
+
+1729793468 source:c:\darhie\sgg-utn-tpi-progra2\src\registroasistencia.cpp
+	"registroAsistencia.h"
+
+1729793458 c:\darhie\sgg-utn-tpi-progra2\include\registroasistencia.h
+	"fecha.h"
+
+1729793582 source:c:\darhie\sgg-utn-tpi-progra2\src\registropago.cpp
+	"registroPago.h"
+
+1729793522 c:\darhie\sgg-utn-tpi-progra2\include\registropago.h
+	"fecha.h"
+
+1729783619 source:c:\darhie\sgg-utn-tpi-progra2\src\rutina.cpp
+	"rutina.h"
+
+1729783619 c:\darhie\sgg-utn-tpi-progra2\include\rutina.h
+	<cstring>
+
+1729794489 source:c:\darhie\sgg-utn-tpi-progra2\src\socio.cpp
+	"socio.h"
+	<cstring>
+
+1729794006 source:c:\darhie\sgg-utn-tpi-progra2\src\usuario.cpp
+	"usuario.h"
+	<cstring>
+
+1729795036 source:c:\darhie\sgg-utn-tpi-progra2\src\usuarioautenticado.cpp
+	"usuarioAutenticado.h"
+	<cstring>
+
+1729856919 source:c:\darhie\sgg-utn-tpi-progra2\src\menusocio.cpp
+	<iostream>
+	<cstring>
+	"menuSocio.h"
 
