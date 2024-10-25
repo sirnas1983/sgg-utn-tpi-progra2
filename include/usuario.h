@@ -32,6 +32,7 @@ public:
     Fecha getFechaNacimiento() const;
     bool getEstaHabilitado() const;
     bool validarContrasenia(const char* pass);
+    const char* getNombreCompleto() const;
 
     // Setters
     void setIdUsuario(int idUsuario);

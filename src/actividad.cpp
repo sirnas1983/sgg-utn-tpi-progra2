@@ -33,7 +33,7 @@ void Actividad::setIdActividad(int idActividad)
 
 void Actividad::setNombre(const char* nombre)
 {
-    if (nombre) { // Validación de nombre
+    if (nombre) {
         strncpy(_nombre, nombre, sizeof(_nombre) - 1);
         _nombre[sizeof(_nombre) - 1] = '\0';
     }

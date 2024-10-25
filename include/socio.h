@@ -13,6 +13,7 @@ private:
     int _idEntrenadorAsignado;
     int _pinIngreso;
 
+
 public:
     // Constructores
     Socio();

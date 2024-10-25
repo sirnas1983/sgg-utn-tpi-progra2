@@ -4,7 +4,7 @@
 
 class MenuPrincipal{
 private:
-    UsuarioAutenticado* usuario;
+    UsuarioAutenticado _usuario;
 public:
     void mostrarMenu();
 

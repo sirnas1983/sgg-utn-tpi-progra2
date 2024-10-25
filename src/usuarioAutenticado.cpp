@@ -11,6 +11,12 @@ UsuarioAutenticado::UsuarioAutenticado(int idUsuario, const char* nombre, const 
     _apellido[sizeof(_apellido) - 1] = '\0';
 }
 
+UsuarioAutenticado::UsuarioAutenticado()
+    : _idUsuario(0), _dni(0), _fechaNacimiento(), _fechaIngreso(), _rol(Rol::SOCIO), _estaHabilitado(false) {
+    _nombre[0] = '\0';
+    _apellido[0] = '\0';
+}
+
 // Getters
 int UsuarioAutenticado::getIdUsuario() const {
     return _idUsuario;

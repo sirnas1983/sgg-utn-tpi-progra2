@@ -12,6 +12,7 @@ void MenuPrincipal::mostrarMenu() {
         int dni;
         char contrasena[20];
         Rol rol;
+
         Autenticador autenticador;
 
         cout << "¡¡Bienvenido a MetalGym!!" << endl;
@@ -26,12 +27,12 @@ void MenuPrincipal::mostrarMenu() {
         cout << "Ingrese contraseña: ";
         cin.getline(contrasena, sizeof(contrasena));
 
-        UsuarioAutenticado* usuario = autenticador.autenticar(dni, contrasena);
+        UsuarioAutenticado usuario = autenticador.autenticar(dni, contrasena);
 
-        if (usuario != nullptr) {
-            cout << "Autenticación exitosa. ¡Bienvenido, " << usuario->getNombre() << "!" << endl;
+        if (usuario.estaHabilitado()) {
+            cout << "Autenticación exitosa. ¡Bienvenido, " << usuario.getNombre() << "!" << endl;
 
-            rol = usuario->getRol();
+            rol = usuario.getRol();
 
             switch (rol) {
                 case Rol::SOCIO: {
@@ -40,12 +41,12 @@ void MenuPrincipal::mostrarMenu() {
                     break;
                 }
                 case Rol::ENTRENADOR: {
-                    //MenuEntrenador menuEntrenador(*usuario);
+                    //MenuEntrenador menuEntrenador(usuario);
                     //menuEntrenador.mostrarMenu();
                     break;
                 }
                 case Rol::GERENTE: {
-                    //MenuGerente menuGerente(*usuario);
+                    //MenuGerente menuGerente(usuario);
                     //menuGerente.mostrarMenu();
                     break;
                 }
@@ -57,6 +58,5 @@ void MenuPrincipal::mostrarMenu() {
         } else {
             cout << "Autenticación fallida. Por favor, verifique sus credenciales..." << endl;
         }
-        delete usuario;
     }
 

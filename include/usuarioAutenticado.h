@@ -18,6 +18,7 @@ private:
 public:
     // Constructor
     UsuarioAutenticado(int idUsuario, const char* nombre, const char* apellido, int dni, Fecha fechaNacimiento, Fecha fechaIngreso, Rol rol, bool estaHabilitado);
+    UsuarioAutenticado();
 
     // Getters
     int getIdUsuario() const;

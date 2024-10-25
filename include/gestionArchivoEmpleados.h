@@ -12,6 +12,7 @@ class GestionArchivoEmpleado{
         bool guardar(Empleado empleado, int posicion);
         int buscarId(int IdUsuario);
         int buscarDni(int dni);
+        int buscarLegajo(int dni);
         Empleado leer(int posicion);
         int cantidadRegistros();
         void leer(int cantidadRegistros, Empleado* vect);

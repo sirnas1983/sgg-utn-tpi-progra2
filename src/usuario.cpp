@@ -44,10 +44,16 @@ const char* Usuario::getPass() const { return _pass; }
 Rol Usuario::getRol() const { return _rol; }
 Fecha Usuario::getFechaNacimiento() const { return _fechaNacimiento; }
 bool Usuario::getEstaHabilitado() const { return _estaHabilitado; }
-
+const char* Usuario::getNombreCompleto() const {
+    char* nombreCompleto = new char[strlen(_nombre) + strlen(_apellido) + 2];
+    strcpy(nombreCompleto, _nombre);
+    strcat(nombreCompleto, " ");
+    strcat(nombreCompleto, _apellido);
+    return nombreCompleto;
+}
 bool Usuario::validarContrasenia(const char* pass)
 {
-    return strcmp(pass, _pass) == 0; // Comparación correcta
+    return strcmp(pass, _pass) == 0;
 }
 
 // Setters

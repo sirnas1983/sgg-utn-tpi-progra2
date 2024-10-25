@@ -12,7 +12,6 @@ RegistroPago::RegistroPago(int idRegistroPago, int idUsuario, float monto, const
 {
 }
 
-
 // Getters
 int RegistroPago::getIdRegistroPago() const
 {
@@ -42,12 +41,12 @@ Fecha RegistroPago::getPeriodo() const
 // Setters
 void RegistroPago::setIdRegistroPago(int idRegistroPago)
 {
-    _idRegistroPago = idRegistroPago; // Considera validar si es negativo
+    _idRegistroPago = idRegistroPago;
 }
 
 void RegistroPago::setIdUsuario(int idUsuario)
 {
-    _idUsuario = idUsuario; // Considera validar si es negativo
+    _idUsuario = idUsuario;
 }
 
 void RegistroPago::setFechaPago(const Fecha& fechaPago)
@@ -58,7 +57,7 @@ void RegistroPago::setFechaPago(const Fecha& fechaPago)
 void RegistroPago::setMonto(float monto)
 {
     if (monto < 0) {
-        // Manejar error: el monto no puede ser negativo
+
         return;
     }
     _monto = monto;

@@ -3,7 +3,7 @@
 #include "menuSocio.h"
 using namespace std;
 
-MenuSocio::MenuSocio(UsuarioAutenticado* usuario) {
+MenuSocio::MenuSocio(UsuarioAutenticado usuario) {
     _usuario = usuario;
 }
 
@@ -47,7 +47,7 @@ void MenuSocio::mostrarMenu() {
                 break;
             case 0:
                 cout << "¡Gracias por formar parte de esta familia!\n";
-                _usuario = nullptr;
+                _usuario = UsuarioAutenticado();
                 break;
             default:
                 cout << "Opción inválida. Intente nuevamente.\n";

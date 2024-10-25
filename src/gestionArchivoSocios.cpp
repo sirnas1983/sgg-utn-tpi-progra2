@@ -1,5 +1,8 @@
 #include "gestionArchivoSocios.h"
 #include "socio.h"
+#include <iostream>
+#include <cstring>
+using namespace std;
 
 GestionArchivoSocios::GestionArchivoSocios(std::string nombreArchivo) {
     _nombreArchivo = nombreArchivo;
@@ -92,6 +95,29 @@ void GestionArchivoSocios::leer(int cantidadRegistros, Socio* vector) {
     }
     for (int i = 0; i < cantidadRegistros; i++) {
         fread(&vector[i], sizeof(Socio), 1, pArchivo);
+    }
+    fclose(pArchivo);
+}
+
+
+void GestionArchivoSocios::verSociosPorEntrenador(int idEntrenador){
+
+    FILE* pArchivo = fopen (_nombreArchivo.c_str(), "rb");
+    if (pArchivo == NULL){
+        cout << "Error al leer el archivo.." << endl;
+    }
+    Socio socio;
+    int i = 0;
+    while (fread(&socio, sizeof(Socio), 1, pArchivo)) {
+        if (socio.getIdEntrenadorAsignado() == idEntrenador) {
+            const char* nombreCompleto = socio.getNombreCompleto();
+            cout << "#" << i + 1 << " - " << nombreCompleto;
+            delete[] nombreCompleto;
+        }
+        if((i + 1)%10 == 0){
+            system("pause");
+        }
+        i++;
     }
     fclose(pArchivo);
 }

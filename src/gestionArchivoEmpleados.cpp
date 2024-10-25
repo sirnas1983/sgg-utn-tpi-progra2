@@ -61,6 +61,24 @@ int GestionArchivoEmpleado::buscarDni(int dni) {
     return -1;
 }
 
+int GestionArchivoEmpleado::buscarLegajo(int legajo) {
+    FILE *pArchivo = fopen(_nombreArchivo.c_str(), "rb");
+    if (pArchivo == NULL) {
+        return -1;
+    }
+    Empleado empleado;
+    int i = 0;
+    while (fread(&empleado, sizeof(Empleado), 1, pArchivo)) {
+        if (empleado.getLegajo() == legajo) {
+            fclose(pArchivo);
+            return i;
+        }
+        i++;
+    }
+    fclose(pArchivo);
+    return -1;
+}
+
 Empleado GestionArchivoEmpleado::leer(int posicion) {
     FILE *pArchivo = fopen(_nombreArchivo.c_str(), "rb");
     if (pArchivo == NULL) {

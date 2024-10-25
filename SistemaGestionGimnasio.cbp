@@ -34,6 +34,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="empleados.dat" />
 		<Unit filename="include/actividad.h">
 			<Option virtualFolder="modelos/headers/" />
 		</Unit>
@@ -82,7 +83,7 @@
 		<Unit filename="include/rutina.h">
 			<Option virtualFolder="modelos/headers/" />
 		</Unit>
-		<Unit filename="include/servicioEntrenador.h">
+		<Unit filename="include/servicioEmpleado.h">
 			<Option virtualFolder="servicios/headers/" />
 		</Unit>
 		<Unit filename="include/socio.h">
@@ -148,7 +149,7 @@
 		<Unit filename="src/rutina.cpp">
 			<Option virtualFolder="modelos/" />
 		</Unit>
-		<Unit filename="src/servicioEntrenador.cpp">
+		<Unit filename="src/servicioEmpleado.cpp">
 			<Option virtualFolder="servicios/" />
 		</Unit>
 		<Unit filename="src/socio.cpp">

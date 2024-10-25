@@ -3,15 +3,14 @@
 
 // Constructor por defecto
 Empleado::Empleado()
-    : Usuario(), _legajo(0), _turno(Turno::MANIANA), _actividadPrincipal() // Inicializa actividadPrincipal
-{
+    : Usuario(), _legajo(0), _turno(Turno::MANIANA), _actividadPrincipal(){
 }
 
 // Constructor con parámetros
-Empleado::Empleado(int idUsuario, const char* nombre, const char* apellido, int dni, Fecha fechaIngreso, const char* pass, Rol rol, Fecha fechaNacimiento, bool estaHabilitado,
+Empleado::Empleado(const char* nombre, const char* apellido, int dni, int idUsuario, Fecha fechaNacimiento, Fecha fechaIngreso, const char* pass, bool estaHabilitado, Rol rol,
                    int legajo, Turno turno, const Actividad& actividadPrincipal)
-    : Usuario(idUsuario, nombre, apellido, dni, fechaNacimiento, fechaIngreso, pass, rol, estaHabilitado), // Ajuste aquí
-      _legajo(legajo), _turno(turno), _actividadPrincipal(actividadPrincipal) // Inicializa legajo, turno y actividadPrincipal
+    : Usuario(idUsuario, nombre, apellido, dni, fechaNacimiento, fechaIngreso, pass, rol, estaHabilitado),
+      _legajo(legajo), _turno(turno), _actividadPrincipal(actividadPrincipal)
 {
 }
 

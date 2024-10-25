@@ -5,10 +5,10 @@
 
 class MenuSocio {
     private:
-        UsuarioAutenticado* _usuario;
+        UsuarioAutenticado _usuario;
 
     public:
-        MenuSocio(UsuarioAutenticado* usuario);
+        MenuSocio(UsuarioAutenticado usuario);
         void mostrarMenu();
 
         void verEntrenadorDesignado();

@@ -5,6 +5,8 @@
 #include "actividad.h"
 #include "turno.h"
 
+using namespace std;
+
 class Empleado : public Usuario
 {
 private:
@@ -17,7 +19,7 @@ public:
     Empleado();
 
     // Constructor con parámetros
-    Empleado(int idUsuario, const char* nombre, const char* apellido, int dni, Fecha fechaIngreso, const char* pass, Rol rol, Fecha fechaNacimiento, bool estaHabilitado,
+    Empleado(const char* nombre, const char* apellido, int dni, int idUsuario, Fecha fechaNacimiento, Fecha fechaIngreso, const char* pass,  bool estaHabilitado, Rol rol,
              int legajo, Turno turno, const Actividad& actividadPrincipal);
 
     // Getters

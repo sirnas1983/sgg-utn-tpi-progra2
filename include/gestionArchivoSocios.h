@@ -15,4 +15,5 @@ class GestionArchivoSocios{
         Socio leer(int posicion);
         int cantidadRegistros();
         void leer(int cantidadRegistros, Socio* vect);
+        void verSociosPorEntrenador(int idEntrenador);
 };
